@@ -8,6 +8,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import { BASE_PATH } from "@/lib/path";
 
 export default function Hero() {
   const handleCTA = () => alert("사전예약이 접수되었습니다!");
@@ -30,7 +31,7 @@ export default function Hero() {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <Image
-          src="/images/dolsue_greeting.png"
+          src={`${BASE_PATH}/images/dolsue_greeting.png`}
           alt="프리미엄 하이테크 휴머노이드 돌쇠의 인사"
           fill
           className="object-contain drop-shadow-[0_0_30px_rgba(251,77,39,0.3)]"

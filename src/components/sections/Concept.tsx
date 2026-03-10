@@ -10,6 +10,7 @@ import Image from "next/image";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { CORE_VALUES } from "@/lib/constants";
+import { BASE_PATH } from "@/lib/path";
 
 export default function Concept() {
   return (
@@ -61,7 +62,7 @@ export default function Concept() {
           transition={{ duration: 0.7 }}
         >
           <Image
-            src="/images/dolsue_sweeping.png"
+            src={`${BASE_PATH}/images/dolsue_sweeping.png`}
             alt="마당을 쓸고 있는 첨단 휴머노이드 돌쇠"
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-700"

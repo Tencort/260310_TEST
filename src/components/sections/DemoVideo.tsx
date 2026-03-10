@@ -8,6 +8,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionWrapper from "@/components/ui/SectionWrapper";
+import { BASE_PATH } from "@/lib/path";
 
 export default function DemoVideo() {
   return (
@@ -23,7 +24,7 @@ export default function DemoVideo() {
           >
             {/* 실제 돌쇠 시네마틱 이미지 (포스터) */}
             <Image
-              src="/images/dolsue_hanok.png"
+              src={`${BASE_PATH}/images/dolsue_hanok.png`}
               alt="한옥 마루를 광택내고 있는 돌쇠"
               fill
               className="object-cover opacity-80"
